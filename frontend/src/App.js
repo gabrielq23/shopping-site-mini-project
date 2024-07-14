@@ -11,9 +11,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/cart" element={<Cart />}/>
-          <Route path="/notfound" element={<PageNotFound/>}/>
+          <Route path="/" exact element={<Home />}/>
+          <Route path="/cart" exact element={<Cart />}/>
+          <Route path="/notfound" exact element={<PageNotFound/>}/>
           <Route path="*" element={<Navigate to="/notfound" replace/>}/>
         </Routes>
       </Router>
