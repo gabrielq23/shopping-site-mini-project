@@ -8,11 +8,11 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get("/", (request, response) =>{
+app.get("/api", (request, response) =>{
     response.send("NODE API IS WORKING!")
 })
 
-app.get("/products", (request, response) =>{
+app.get("/api/products", (request, response) =>{
     response.send(products)
 })
 
